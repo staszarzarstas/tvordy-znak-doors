@@ -92,7 +92,7 @@ ${formData.message ? `💬 Сообщение: ${formData.message}` : ''}
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Адрес</h4>
-                  <p className="text-gray-300">ул. Маршала Жукова, 53K</p>
+                  <p className="text-gray-300">ул. Маршала-Жукова, 53K</p>
                 </div>
               </div>
 
