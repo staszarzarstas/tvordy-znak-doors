@@ -2,48 +2,10 @@ import { useState } from 'react';
 import { ArrowRight, X } from 'lucide-react';
 
 // Импорт изображений для карточек (без фона)
-import comfortNKNoFon from '../../Твердый_знак/door-no-fon/комфортНКфото-Photoroom.png';
-import comfortNK5NoFon from '../../Твердый_знак/door-no-fon/комфортНК5фото-Photoroom.png';
-import comfortNK6NoFon from '../../Твердый_знак/door-no-fon/комфортНК6фото-Photoroom.png';
-import comfortNK47NoFon from '../../Твердый_знак/door-no-fon/комфортНК47фото-Photoroom.png';
-import nk48NoFon from '../../Твердый_знак/door-no-fon/нк48фото-Photoroom.png';
-import nk49NoFon from '../../Твердый_знак/door-no-fon/нк49-Photoroom.png';
-import nk50NoFon from '../../Твердый_знак/door-no-fon/нк50фото-Photoroom.png';
-import prestizhLongNoFon from '../../Твердый_знак/door-no-fon/престижЛонгФото-Photoroom.png';
-import liderTermoNoFon from '../../Твердый_знак/door-no-fon/лидерТермоФото-Photoroom.png';
-import liderNoFon from '../../Твердый_знак/door-no-fon/лидерФото-Photoroom.png';
-import brizNoFon from '../../Твердый_знак/door-no-fon/бризФото-Photoroom.png';
-import armadaNoFon from '../../Твердый_знак/door-no-fon/амратаФото-Photoroom.png';
-import avangardNoFon from '../../Твердый_знак/door-no-fon/авангардФото-Photoroom.png';
-import fregatNoFon from '../../Твердый_знак/door-no-fon/фрегатФото-Photoroom.png';
-import rifNoFon from '../../Твердый_знак/door-no-fon/рифФото-Photoroom.png';
-import gavanNoFon from '../../Твердый_знак/door-no-fon/гаваньФото-Photoroom.png';
-import vympelNoFon from '../../Твердый_знак/door-no-fon/вымпелФото-Photoroom.png';
-import mechtaNoFon from '../../Твердый_знак/door-no-fon/мечтаФото-Photoroom.png';
-import volnaNoFon from '../../Твердый_знак/door-no-fon/волнаФото-Photoroom.png';
-import lagunaNoFon from '../../Твердый_знак/door-no-fon/лагунаДверь-Photoroom.png';
+// Удалены импорты старых изображений
 
 // Импорт изображений для модального окна (с фоном)
-import comfortNK from '../../Твердый_знак/cut-doors/комфортНКфото.png';
-import comfortNK5 from '../../Твердый_знак/cut-doors/комфортНК5фото.png';
-import comfortNK6 from '../../Твердый_знак/cut-doors/комфортНК6фото.png';
-import comfortNK47 from '../../Твердый_знак/cut-doors/комфортНК47фото.png';
-import nk48 from '../../Твердый_знак/cut-doors/нк48фото.png';
-import nk49 from '../../Твердый_знак/cut-doors/нк49.png';
-import nk50 from '../../Твердый_знак/cut-doors/нк50фото.png';
-import prestizhLong from '../../Твердый_знак/cut-doors/престижЛонгФото.png';
-import liderTermo from '../../Твердый_знак/cut-doors/лидерТермоФото.png';
-import lider from '../../Твердый_знак/cut-doors/лидерФото.png';
-import briz from '../../Твердый_знак/cut-doors/бризФото.png';
-import armada from '../../Твердый_знак/cut-doors/амратаФото.png';
-import avangard from '../../Твердый_знак/cut-doors/авангардФото.png';
-import fregat from '../../Твердый_знак/cut-doors/фрегатФото.png';
-import rif from '../../Твердый_знак/cut-doors/рифФото.png';
-import gavan from '../../Твердый_знак/cut-doors/гаваньФото.png';
-import vympel from '../../Твердый_знак/cut-doors/вымпелФото.png';
-import mechta from '../../Твердый_знак/cut-doors/мечтаФото.png';
-import volna from '../../Твердый_знак/cut-doors/волнаФото.png';
-import laguna from '../../Твердый_знак/cut-doors/лагунаДверь.png';
+// Удалены импорты старых изображений
 
 // Добавляю объект с техническими данными
 const techData: Record<string, string[]> = {
@@ -426,160 +388,160 @@ const Catalog = () => {
       description: "Надёжные металлические двери с повышенной защитой",
       features: ["Толщина металла 2мм", "Многоточечный замок", "Терморазрыв"],
       price: "от 85 000 ₽",
-      image: comfortNK,
-      cardImage: comfortNKNoFon
+      image: "doors/комфортНКфото_результат.webp",
+      cardImage: "door-no-fon/комфортНКфото-Photoroom.png"
     },
     {
       title: "Комфорт НК 5",
       description: "Надёжные металлические двери с повышенной защитой",
       features: ["Толщина металла 2мм", "Многоточечный замок", "Терморазрыв"],
       price: "от 85 000 ₽",
-      image: comfortNK5,
-      cardImage: comfortNK5NoFon
+      image: "doors/комфортНК5фото_результат.webp",
+      cardImage: "door-no-fon/комфортНК5фото-Photoroom.png"
     },
     {
       title: "Комфорт НК 6",
       description: "Надёжные металлические двери с повышенной защитой",
       features: ["Толщина металла 2мм", "Многоточечный замок", "Терморазрыв"],
       price: "от 85 000 ₽",
-      image: comfortNK6,
-      cardImage: comfortNK6NoFon
+      image: "doors/комфортНК6фото_результат.webp",
+      cardImage: "door-no-fon/комфортНК6фото-Photoroom.png"
     },
     {
       title: "Комфорт НК 47",
       description: "Надёжные металлические двери с повышенной защитой",
       features: ["Толщина металла 2мм", "Многоточечный замок", "Терморазрыв"],
       price: "от 85 000 ₽",
-      image: comfortNK47,
-      cardImage: comfortNK47NoFon
+      image: "doors/комфортНК47фото_результат.webp",
+      cardImage: "door-no-fon/комфортНК47фото-Photoroom.png"
     },
     {
       title: "НК 48",
       description: "Надёжные металлические двери с повышенной защитой",
       features: ["Толщина металла 2мм", "Многоточечный замок", "Терморазрыв"],
       price: "от 85 000 ₽",
-      image: nk48,
-      cardImage: nk48NoFon
+      image: "doors/нк48фото_результат.webp",
+      cardImage: "door-no-fon/нк48фото-Photoroom.png"
     },
     {
       title: "НК 49",
       description: "Надёжные металлические двери с повышенной защитой",
       features: ["Толщина металла 2мм", "Многоточечный замок", "Терморазрыв"],
       price: "от 85 000 ₽",
-      image: nk49,
-      cardImage: nk49NoFon
+      image: "doors/нк49_результат.webp",
+      cardImage: "door-no-fon/нк49-Photoroom.png"
     },
     {
       title: "НК 50",
       description: "Надёжные металлические двери с повышенной защитой",
       features: ["Толщина металла 2мм", "Многоточечный замок", "Терморазрыв"],
       price: "от 85 000 ₽",
-      image: nk50,
-      cardImage: nk50NoFon
+      image: "doors/нк50фото_результат.webp",
+      cardImage: "door-no-fon/нк50фото-Photoroom.png"
     },
     {
       title: "Престиж Лонг",
       description: "Элитные входные группы для частных домов",
       features: ["Панорамное остекление", "Автоматические замки", "Дизайнерские решения"],
       price: "от 150 000 ₽",
-      image: prestizhLong,
-      cardImage: prestizhLongNoFon
+      image: "doors/престижЛонгФото_результат.webp",
+      cardImage: "door-no-fon/престижЛонгФото-Photoroom.png"
     },
     {
       title: "Лидер Термо",
       description: "Максимальная степень защиты для особых объектов",
       features: ["Класс защиты Б7", "Пулестойкое стекло", "Биометрические замки"],
       price: "от 45 000 ₽",
-      image: liderTermo,
-      cardImage: liderTermoNoFon
+      image: "doors/лидерТермоФото_результат.webp",
+      cardImage: "door-no-fon/лидерТермоФото-Photoroom.png"
     },
     {
       title: "Лидер",
       description: "Максимальная степень защиты для особых объектов",
       features: ["Класс защиты Б7", "Пулестойкое стекло", "Биометрические замки"],
       price: "от 45 000 ₽",
-      image: lider,
-      cardImage: liderNoFon
+      image: "doors/лидерФото_результат.webp",
+      cardImage: "door-no-fon/лидерФото-Photoroom.png"
     },
     {
       title: "Бриз",
       description: "Традиционные входные двери в классическом стиле",
       features: ["Натуральная древесина", "Ручная отделка"],
       price: "от 65 000 ₽",
-      image: briz,
-      cardImage: brizNoFon
+      image: "doors/бризФото_результат.webp",
+      cardImage: "door-no-fon/бризФото-Photoroom.png"
     },
     {
       title: "Армада",
       description: "Традиционные входные двери в классическом стиле",
       features: ["Натуральная древесина", "Ручная отделка"],
       price: "от 65 000 ₽",
-      image: armada,
-      cardImage: armadaNoFon
+      image: "doors/амратаФото_результат.webp",
+      cardImage: "door-no-fon/амратаФото-Photoroom.png"
     },
     {
       title: "Авангард",
       description: "Минималистичные входные двери в современном стиле",
       features: ["Скрытые петли", "Умные замки", "LED-подсветка"],
       price: "от 120 000 ₽",
-      image: avangard,
-      cardImage: avangardNoFon
+      image: "doors/авангардФото_результат.webp",
+      cardImage: "door-no-fon/авангардФото-Photoroom.png"
     },
     {
       title: "Фрегат",
       description: "Эксклюзивные входные двери премиум-класса",
       features: ["Индивидуальный дизайн", "Драгоценные металлы", "Ручная работа"],
       price: "от 150 000 ₽",
-      image: fregat,
-      cardImage: fregatNoFon
+      image: "doors/фрегатФото_результат.webp",
+      cardImage: "door-no-fon/фрегатФото-Photoroom.png"
     },
     {
       title: "Риф",
       description: "Эксклюзивные входные двери премиум-класса",
       features: ["Индивидуальный дизайн", "Драгоценные металлы", "Ручная работа"],
       price: "от 150 000 ₽",
-      image: rif,
-      cardImage: rifNoFon
+      image: "doors/рифФото_результат.webp",
+      cardImage: "door-no-fon/рифФото-Photoroom.png"
     },
     {
       title: "Гавань",
       description: "Эксклюзивные входные двери премиум-класса",
       features: ["Индивидуальный дизайн", "Драгоценные металлы", "Ручная работа"],
       price: "от 150 000 ₽",
-      image: gavan,
-      cardImage: gavanNoFon
+      image: "doors/гаваньФото_результат.webp",
+      cardImage: "door-no-fon/гаваньФото-Photoroom.png"
     },
     {
       title: "Вымпел",
       description: "Эксклюзивные входные двери премиум-класса",
       features: ["Индивидуальный дизайн", "Драгоценные металлы", "Ручная работа"],
       price: "от 150 000 ₽",
-      image: vympel,
-      cardImage: vympelNoFon
+      image: "doors/вымпелФото_результат.webp",
+      cardImage: "door-no-fon/вымпелФото-Photoroom.png"
     },
     {
       title: "Мечта",
       description: "Эксклюзивные входные двери премиум-класса",
       features: ["Индивидуальный дизайн", "Драгоценные металлы", "Ручная работа"],
       price: "от 150 000 ₽",
-      image: mechta,
-      cardImage: mechtaNoFon
+      image: "doors/мечтаФото_результат.webp",
+      cardImage: "door-no-fon/мечтаФото-Photoroom.png"
     },
     {
       title: "Волна",
       description: "Эксклюзивные входные двери премиум-класса",
       features: ["Индивидуальный дизайн", "Драгоценные металлы", "Ручная работа"],
       price: "от 150 000 ₽",
-      image: volna,
-      cardImage: volnaNoFon
+      image: "doors/волнаФото_результат.webp",
+      cardImage: "door-no-fon/волнаФото-Photoroom.png"
     },
     {
       title: "Лагуна",
       description: "Эксклюзивные входные двери премиум-класса",
       features: ["Индивидуальный дизайн", "Драгоценные металлы", "Ручная работа"],
       price: "от 150 000 ₽",
-      image: laguna,
-      cardImage: lagunaNoFon
+      image: "doors/лагунаДверь_результат.webp",
+      cardImage: "door-no-fon/лагунаДверь-Photoroom.png"
     }
   ];
 

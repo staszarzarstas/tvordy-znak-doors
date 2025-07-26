@@ -1,11 +1,11 @@
 import { Award, Users, Wrench } from 'lucide-react';
-import aboutUsImage from '../../Твердый_знак/aboutUs.png'; // Правильный путь к изображению
+// Удален импорт изображения
 
 const About = () => {
   return (
     <section id="about" className="pt-0 pb-20 bg-white">
       <img 
-        src={aboutUsImage} 
+        src="aboutUs.webp" 
         alt="О нашей компании - Твердый знак"
         className="block w-screen max-w-none h-auto m-0 p-0"
         style={{display:'block',margin:0,padding:0}}
