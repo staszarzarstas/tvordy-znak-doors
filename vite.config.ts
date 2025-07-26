@@ -3,14 +3,14 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   server: {
     host: true,
     port: 3000,
     open: true,
     strictPort: true,
   },
-  base: '/tvordy-znak-doors-website-main/',
+  base: '/',
   plugins: [
     react(),
   ],
@@ -24,4 +24,4 @@ export default defineConfig(({ mode }) => ({
   build: {
     assetsInlineLimit: 0,
   },
-}));
+});
