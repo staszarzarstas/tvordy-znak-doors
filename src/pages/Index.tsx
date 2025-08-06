@@ -10,18 +10,24 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <Hero />
-      <img 
-        src="/background-header.svg" 
-        alt="Фон секции" 
-        className="hidden md:block w-screen max-w-none" 
-        style={{margin:0,padding:0}} 
-      />
-      <img 
-        src="/headSectionPhone.svg" 
-        alt="Фон секции для мобильных" 
-        className="block md:hidden w-screen max-w-none" 
-        style={{margin:0,padding:0}} 
-      />
+      <picture className="hidden md:block w-screen max-w-none">
+        <source srcSet="/headsectionn_результат.webp" type="image/webp" />
+        <img 
+          src="/background-header.svg" 
+          alt="Фон секции" 
+          className="w-screen max-w-none" 
+          style={{margin:0,padding:0}} 
+        />
+      </picture>
+      <picture className="block md:hidden w-screen max-w-none">
+        <source srcSet="/headphonesection_результат.webp" type="image/webp" />
+        <img 
+          src="/headSectionPhone.svg" 
+          alt="Фон секции для мобильных" 
+          className="w-screen max-w-none" 
+          style={{margin:0,padding:0}} 
+        />
+      </picture>
       <About />
       <Catalog />
       <Contacts />
