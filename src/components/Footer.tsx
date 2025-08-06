@@ -20,7 +20,6 @@ const Footer = () => {
               <li><a href="#" className="hover:text-gold transition-colors">Входные двери</a></li>
               <li><a href="#" className="hover:text-gold transition-colors">Бронированные двери</a></li>
               <li><a href="#" className="hover:text-gold transition-colors">Установка и монтаж</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">Гарантийное обслуживание</a></li>
             </ul>
           </div>
 

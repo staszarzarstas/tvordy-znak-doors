@@ -1,21 +1,21 @@
-import { Award, Users, Wrench } from 'lucide-react';
+import { Award, Users, Package } from 'lucide-react';
 // Удален импорт изображения
 
 const About = () => {
   return (
-    <section id="about" className="pt-0 pb-20 bg-white">
+    <section id="about" className="pt-0 pb-20" style={{backgroundColor: 'rgb(50,50,48)'}}>
       <img 
         src="aboutUs.webp" 
         alt="О нашей компании - Твердый знак"
-        className="block w-screen max-w-none h-auto m-0 p-0"
-        style={{display:'block',margin:0,padding:0}}
+        className="block w-full max-w-4xl h-auto mx-auto my-8 rounded-lg shadow-lg"
+        style={{display:'block'}}
       />
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-charcoal mb-4"></h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-16 bg-white rounded-2xl p-8 shadow-lg">
           <div className="text-center group hover:transform hover:scale-105 transition-all duration-300">
             <div className="bg-gold/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors">
               <Award className="w-10 h-10 text-gold" />
@@ -38,11 +38,11 @@ const About = () => {
 
           <div className="text-center group hover:transform hover:scale-105 transition-all duration-300">
             <div className="bg-gold/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors">
-              <Wrench className="w-10 h-10 text-gold" />
+              <Package className="w-10 h-10 text-gold" />
             </div>
-            <h3 className="text-2xl font-bold text-charcoal mb-4">Гарантия качества</h3>
+            <h3 className="text-2xl font-bold text-charcoal mb-4">Используемые материалы</h3>
             <p className="text-gray-600">
-              Полная гарантия на все виды работ и используемые материалы
+              Только качественные материалы от проверенных поставщиков
             </p>
           </div>
         </div>
@@ -67,10 +67,6 @@ const About = () => {
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-gold rounded-full"></div>
                   <span>Профессиональная установка</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-gold rounded-full"></div>
-                  <span>Послегарантийное обслуживание</span>
                 </li>
               </ul>
             </div>

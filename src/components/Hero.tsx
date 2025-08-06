@@ -1,6 +1,6 @@
 const Hero = () => {
   const handleConsultation = () => {
-    const phoneNumber = "79615882506"; // номер без пробелов и знаков
+    const phoneNumber = "79528129901"; // номер без пробелов и знаков
     const message = encodeURIComponent("Здравствуйте! Меня интересует консультация по входным дверям.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
@@ -34,18 +34,15 @@ const Hero = () => {
             </a>
           </div>
           
-          <div className="mt-16 grid md:grid-cols-3 gap-8">
+          <div className="mt-16 grid md:grid-cols-3 gap-16">
             <div className="text-center">
               <div className="text-3xl font-bold text-gold mb-2">500+</div>
               <div className="text-gray-300">Установленных дверей</div>
             </div>
+            <div></div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-gold mb-2">5 лет</div>
-              <div className="text-gray-300">Гарантии на продукцию</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-gold mb-2">24/7</div>
-              <div className="text-gray-300">Техническая поддержка</div>
+              <div className="text-3xl font-bold text-gold mb-2">1 год</div>
+              <div className="text-gray-300">Гарантия на двери</div>
             </div>
           </div>
         </div>

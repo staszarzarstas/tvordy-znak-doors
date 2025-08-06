@@ -9,6 +9,17 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="bg-charcoal shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4">
@@ -20,24 +31,24 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a
-              href="#about"
+            <button
+              onClick={() => scrollToSection('about')}
               className="text-white hover:text-gold transition-colors duration-300 font-medium"
             >
               О нас
-            </a>
-            <a
-              href="#catalog"
+            </button>
+            <button
+              onClick={() => scrollToSection('catalog')}
               className="text-white hover:text-gold transition-colors duration-300 font-medium"
             >
               Каталог
-            </a>
-            <a
-              href="#contacts"
+            </button>
+            <button
+              onClick={() => scrollToSection('contacts')}
               className="text-white hover:text-gold transition-colors duration-300 font-medium"
             >
               Контакты
-            </a>
+            </button>
           </nav>
 
           {/* Mobile menu button */}
@@ -55,27 +66,24 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gold/20">
             <nav className="flex flex-col space-y-4">
-              <a
-                href="#about"
-                className="text-white hover:text-gold transition-colors duration-300 font-medium"
-                onClick={() => setIsMenuOpen(false)}
+              <button
+                onClick={() => scrollToSection('about')}
+                className="text-white hover:text-gold transition-colors duration-300 font-medium text-left"
               >
                 О нас
-              </a>
-              <a
-                href="#catalog"
-                className="text-white hover:text-gold transition-colors duration-300 font-medium"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button
+                onClick={() => scrollToSection('catalog')}
+                className="text-white hover:text-gold transition-colors duration-300 font-medium text-left"
               >
                 Каталог
-              </a>
-              <a
-                href="#contacts"
-                className="text-white hover:text-gold transition-colors duration-300 font-medium"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button
+                onClick={() => scrollToSection('contacts')}
+                className="text-white hover:text-gold transition-colors duration-300 font-medium text-left"
               >
                 Контакты
-              </a>
+              </button>
             </nav>
           </div>
         )}

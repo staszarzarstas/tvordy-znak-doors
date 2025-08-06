@@ -569,25 +569,26 @@ const Catalog = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
           {displayedDoors.map((door, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group min-h-[500px]"
             >
-              <div className="h-64 relative">
+              <div className="h-80 relative overflow-hidden">
                 <img 
                   src={door.cardImage} 
                   alt={door.title}
-                  className="w-full h-full object-contain scale-125 transform-gpu"
+                  className="w-full h-full object-contain transform-gpu pt-12"
+                  style={{ transform: 'scale(2.0)' }}
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300"></div>
               </div>
-              <h3 className="text-2xl font-bold text-charcoal mb-4 mt-2 text-center">{door.title}</h3>
-              <div className="p-6">
+              <h3 className="text-2xl font-bold text-charcoal mb-4 mt-4 text-center px-4">{door.title}</h3>
+              <div className="p-6 pt-0 relative z-10">
                 <button 
                   onClick={() => handleShowDetails(door)}
-                  className="w-full bg-charcoal hover:bg-charcoal-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2"
+                  className="w-full bg-charcoal hover:bg-charcoal-600 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2"
                 >
                   <span>Подробнее</span>
                   <ArrowRight className="w-4 h-4" />

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
@@ -25,7 +26,7 @@ const Contacts = () => {
     }
 
     // Формируем сообщение для WhatsApp
-    const phoneNumber = "79615882506";
+    const phoneNumber = "79528129901";
     const whatsappMessage = `🔔 ЗАЯВКА НА ОБРАТНЫЙ ЗВОНОК
     
 👤 Имя: ${formData.name}
@@ -92,7 +93,7 @@ ${formData.message ? `💬 Сообщение: ${formData.message}` : ''}
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Адрес</h4>
-                  <p className="text-gray-300">ул. Маршала-Жукова, 53K</p>
+                  <p className="text-gray-300">г. Крымск, ул. Маршала Жукова, 53K</p>
                 </div>
               </div>
 
@@ -102,8 +103,8 @@ ${formData.message ? `💬 Сообщение: ${formData.message}` : ''}
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Время работы</h4>
-                  <p className="text-gray-300">Пн-Пт: 9:00 - 18:00</p>
-                  <p className="text-gray-300">Сб: 10:00 - 16:00</p>
+                  <p className="text-gray-300">Пн-Пт: 8:00 - 17:00</p>
+                  <p className="text-gray-300">Сб: 9:00 - 16:00</p>
                   <p className="text-gray-300">Вс: выходной</p>
                 </div>
               </div>
