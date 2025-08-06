@@ -10,7 +10,18 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <Hero />
-      <img src="/Твердый_знак/background-header.svg" alt="Фон секции" className="block w-screen max-w-none" style={{margin:0,padding:0}} />
+      <img 
+        src="/background-header.svg" 
+        alt="Фон секции" 
+        className="hidden md:block w-screen max-w-none" 
+        style={{margin:0,padding:0}} 
+      />
+      <img 
+        src="/headSectionPhone.svg" 
+        alt="Фон секции для мобильных" 
+        className="block md:hidden w-screen max-w-none" 
+        style={{margin:0,padding:0}} 
+      />
       <About />
       <Catalog />
       <Contacts />
