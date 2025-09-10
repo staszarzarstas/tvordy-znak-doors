@@ -28,8 +28,8 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li>8 (952)-812-99-01</li>
               <li>8 (861)-315-24-54</li>
-              <li>dverieva@list.ru</li>
-              <li>ул. Маршала-Жукова, 53K</li>
+              <li>dverikubani@mail.com</li>
+              <li>Краснодарский край, г. Крымск, ул. Маршала-Жукова, 53K</li>
             </ul>
           </div>
         </div>

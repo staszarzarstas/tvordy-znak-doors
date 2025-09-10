@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
@@ -83,7 +83,7 @@ ${formData.message ? `💬 Сообщение: ${formData.message}` : ''}
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Email</h4>
-                  <p className="text-gray-300">dverieva@list.ru</p>
+                  <p className="text-gray-300">dverikubani@mail.com</p>
                 </div>
               </div>
 
@@ -93,7 +93,7 @@ ${formData.message ? `💬 Сообщение: ${formData.message}` : ''}
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Адрес</h4>
-                  <p className="text-gray-300">г. Крымск, ул. Маршала Жукова, 53K</p>
+                  <p className="text-gray-300">Краснодарский край, г. Крымск, ул. Маршала Жукова, 53K</p>
                 </div>
               </div>
 
@@ -106,6 +106,24 @@ ${formData.message ? `💬 Сообщение: ${formData.message}` : ''}
                   <p className="text-gray-300">Пн-Пт: 8:00 - 17:00</p>
                   <p className="text-gray-300">Сб: 9:00 - 16:00</p>
                   <p className="text-gray-300">Вс: выходной</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="bg-gold/20 p-3 rounded-full">
+                  <MessageCircle className="w-6 h-6 text-gold" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-lg mb-1">Telegram канал</h4>
+                  <a 
+                    href="https://t.me/TZ_DveriKrimsk" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-gold hover:bg-gold-600 text-charcoal font-bold px-4 py-2 rounded-lg transition-colors duration-300 mt-2"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    Подписаться на канал
+                  </a>
                 </div>
               </div>
             </div>
