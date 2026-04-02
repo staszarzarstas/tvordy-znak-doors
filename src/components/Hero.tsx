@@ -36,7 +36,7 @@ const Hero = () => {
           
           <div className="mt-16 grid md:grid-cols-3 gap-16">
             <div className="text-center">
-              <div className="text-3xl font-bold text-gold mb-2">10.000</div>
+              <div className="text-3xl font-bold text-gold mb-2">10000</div>
               <div className="text-gray-300">Установленных дверей</div>
             </div>
             <div></div>

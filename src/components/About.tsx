@@ -2,6 +2,13 @@ import { Award, Users, Package } from 'lucide-react';
 // Удален импорт изображения
 
 const About = () => {
+  const handleOrderCall = () => {
+    const phoneNumber = "79528129901"; // номер без пробелов и знаков
+    const message = encodeURIComponent("Здравствуйте! Хочу заказать звонок. Интересуют входные двери.");
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section id="about" className="pt-0 pb-20" style={{backgroundColor: 'rgb(50,50,48)'}}>
       <img 
@@ -74,7 +81,11 @@ const About = () => {
               <div className="bg-gold/10 p-8 rounded-xl">
                 <h4 className="text-2xl font-bold text-gold mb-4">Бесплатная консультация</h4>
                 <p className="mb-6">Получите профессиональную консультацию по выбору двери</p>
-                <button className="bg-gold hover:bg-gold-600 text-charcoal font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+                <button
+                  type="button"
+                  onClick={handleOrderCall}
+                  className="bg-gold hover:bg-gold-600 text-charcoal font-bold py-3 px-8 rounded-lg transition-colors duration-300"
+                >
                   Заказать звонок
                 </button>
               </div>

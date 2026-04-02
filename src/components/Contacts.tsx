@@ -83,7 +83,7 @@ ${formData.message ? `💬 Сообщение: ${formData.message}` : ''}
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Email</h4>
-                  <p className="text-gray-300">dverikubani@mail.com</p>
+                  <p className="text-gray-300">dverikubani@mail.ru</p>
                 </div>
               </div>
 

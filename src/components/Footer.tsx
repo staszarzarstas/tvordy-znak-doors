@@ -6,7 +6,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold text-gold mb-4">Твердый знак</h3>
             <p className="text-gray-300 mb-4">
-              Надёжные входные двери для вашей безопасности и комфорта. 
+              Надёжные входные двери для вашей безопасности и комфорта.
               Качество, проверенное временем.
             </p>
             <p className="text-sm text-gray-400">
@@ -19,7 +19,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li><a href="#" className="hover:text-gold transition-colors">Входные двери</a></li>
               <li><a href="#" className="hover:text-gold transition-colors">Бронированные двери</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">Установка и монтаж</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Монтаж</a></li>
             </ul>
           </div>
 
@@ -28,8 +28,8 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li>8 (952)-812-99-01</li>
               <li>8 (861)-315-24-54</li>
-              <li>dverikubani@mail.com</li>
-              <li>Краснодарский край, г. Крымск, ул. Маршала-Жукова, 53K</li>
+              <li>dverikubani@mail.ru</li>
+              <li>Краснодарский край, г. Крымск, ул. Маршала Жукова, 53K</li>
             </ul>
           </div>
         </div>
