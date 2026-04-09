@@ -108,24 +108,6 @@ ${formData.message ? `💬 Сообщение: ${formData.message}` : ''}
                   <p className="text-gray-300">Вс: выходной</p>
                 </div>
               </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="bg-gold/20 p-3 rounded-full">
-                  <MessageCircle className="w-6 h-6 text-gold" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-lg mb-1">Telegram канал</h4>
-                  <a 
-                    href="https://t.me/TZ_DveriKrimsk" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-gold hover:bg-gold-600 text-charcoal font-bold px-4 py-2 rounded-lg transition-colors duration-300 mt-2"
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                    Подписаться на канал
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
 

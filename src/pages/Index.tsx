@@ -4,6 +4,7 @@ import About from '@/components/About';
 import Catalog from '@/components/Catalog';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
+import MapSection from '@/components/MapSection';
 
 const Index = () => {
   return (
@@ -31,6 +32,7 @@ const Index = () => {
       <About />
       <Catalog />
       <Contacts />
+      <MapSection />
       <Footer />
     </div>
   );
